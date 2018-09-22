@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Translate</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: black;
+            color: white;
+            font-family: Arial;
+            perspective-origin: top;
+        }
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background: #1abc9c;
+            margin: 20px;
+            transition: .3s;
+        }
+        .container {
+            border: 1px solid white;
+        }
+        .container:hover .cuadrado {
+            /*transform: translate(x, y);*/
+            transform: translate(100px);
+            transform: translateZ(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cuadrado">Hola</div>
+    </div>
+</body>
+</html>

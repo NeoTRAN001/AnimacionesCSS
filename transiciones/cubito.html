@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cubito</title>
+    <style>
+        body {
+            background: black;
+        }
+        .cubito {
+            height: 200px;
+            width: 200px;
+            border-radius: 5%;
+            margin: 5px;
+            transition: 1s;
+            position: absolute;
+        }
+        .caja {
+            border: 1px solid white;
+            position: relative;
+            height: 500px;
+        }
+        .cubito.uno {
+            background: #1abc9c;
+            left: 0;
+        }
+        .cubito.dos {
+            background: #FFC300;
+            right: 0;
+        }
+        .caja:hover .cubito.uno {
+            left: calc(50% - 205px);
+        }
+        .caja:hover .cubito.dos {
+            right: calc(50% - 205px);
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">
+        <div class="cubito uno"></div>
+        <div class="cubito dos"></div>
+    </div>
+</body>
+</html>
